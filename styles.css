@@ -1,0 +1,118 @@
+/* line 1, styles.scss */
+.main {
+  background-color: #808080; }
+
+/* line 4, styles.scss */
+.browser-notice {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  line-height: 25px; }
+  /* line 12, styles.scss */
+  .browser-notice .container {
+    padding: 10%; }
+    @media screen and (min-width: 992px) {
+      /* line 12, styles.scss */
+      .browser-notice .container {
+        padding: 50px 230px; } }
+  /* line 20, styles.scss */
+  .browser-notice h3 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center; }
+  /* line 26, styles.scss */
+  .browser-notice .browser-notice__title {
+    text-align: center; }
+    /* line 29, styles.scss */
+    .browser-notice .browser-notice__title h3 {
+      font-size: 32px; }
+    /* line 33, styles.scss */
+    .browser-notice .browser-notice__title span {
+      font-size: 20px;
+      font-weight: 400; }
+  /* line 39, styles.scss */
+  .browser-notice .browser-notice__img {
+    display: flex;
+    background-color: #e9e9e9;
+    padding: 10% 20%; }
+    @media screen and (min-width: 992px) {
+      /* line 39, styles.scss */
+      .browser-notice .browser-notice__img {
+        padding: 23px 230px; } }
+    /* line 48, styles.scss */
+    .browser-notice .browser-notice__img-item {
+      width: 25%;
+      border-radius: 23px;
+      background-color: #ffffff;
+      width: 24%;
+      height: auto;
+      margin: 0 10px; }
+      @media screen and (min-width: 992px) {
+        /* line 48, styles.scss */
+        .browser-notice .browser-notice__img-item {
+          width: 24%;
+          max-width: 201px;
+          height: auto;
+          max-height: 201px; } }
+  /* line 65, styles.scss */
+  .browser-notice .browser-notice__description {
+    padding: 10% 20%; }
+    @media screen and (min-width: 992px) {
+      /* line 65, styles.scss */
+      .browser-notice .browser-notice__description {
+        padding: 40px 230px 60px; } }
+    /* line 72, styles.scss */
+    .browser-notice .browser-notice__description .wrap {
+      display: flex;
+      flex-wrap: wrap; }
+    /* line 77, styles.scss */
+    .browser-notice .browser-notice__description-item {
+      width: 47%;
+      line-height: 25px;
+      margin-right: 25px; }
+      /* line 87, styles.scss */
+      .browser-notice .browser-notice__description-item h4::before {
+        content: '\f00c';
+        display: inline-block;
+        font-family: "Font Awesome\ 5 Free";
+        color: #eeb316;
+        margin-right: 5px; }
+  /* line 98, styles.scss */
+  .browser-notice .browser-offer {
+    padding: 10% 20%; }
+    @media screen and (min-width: 992px) {
+      /* line 98, styles.scss */
+      .browser-notice .browser-offer {
+        padding: 40px 230px 60px; } }
+    /* line 105, styles.scss */
+    .browser-notice .browser-offer .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      /* line 110, styles.scss */
+      .browser-notice .browser-offer .wrap a {
+        text-decoration: none;
+        text-align: center;
+        margin: 60px 45px 0; }
+        /* line 116, styles.scss */
+        .browser-notice .browser-offer .wrap a:nth-child(1) {
+          margin: 60px 45px 45px 0; }
+        /* line 120, styles.scss */
+        .browser-notice .browser-offer .wrap a:last-child {
+          margin: 60px 0 0 45px; }
+        /* line 124, styles.scss */
+        .browser-notice .browser-offer .wrap a span {
+          display: block;
+          color: #000000; }
+          /* line 128, styles.scss */
+          .browser-notice .browser-offer .wrap a span::nth-child(1) {
+            font-family: "Raleway - Regular";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px; }
+          /* line 134, styles.scss */
+          .browser-notice .browser-offer .wrap a span::nth-child(2) {
+            font-family: "Raleway - Bold";
+            font-weight: 700; }

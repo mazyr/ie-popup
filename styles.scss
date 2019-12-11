@@ -1,0 +1,142 @@
+.main {
+  background-color: #808080;
+}
+.browser-notice {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  line-height: 25px;
+
+  .container {
+    padding: 10%;
+
+    @media screen and (min-width: 992px) {
+      padding: 50px 230px;
+    }
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .browser-notice__title {
+    text-align: center;
+
+    h3 {
+      font-size: 32px;
+    }
+
+    span {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .browser-notice__img {
+    display: flex;
+    background-color: #e9e9e9;
+    padding: 10% 20%;
+
+    @media screen and (min-width: 992px) {
+      padding: 23px 230px;
+    }
+
+    &-item {
+      width: 25%;
+      border-radius: 23px;
+      background-color: #ffffff;
+      width: 24%;
+      height: auto;
+      margin: 0 10px;
+
+      @media screen and (min-width: 992px) {
+        width: 24%;
+        max-width: 201px;
+        height: auto;
+        max-height: 201px;
+      }
+    }
+  }
+
+  .browser-notice__description {
+    padding: 10% 20%;
+
+    @media screen and (min-width: 992px) {
+      padding: 40px 230px 60px;
+    }
+
+    & .wrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      width: 47%;
+      line-height: 25px;
+      margin-right: 25px;
+
+      &:nth-child(2n) {
+        //margin-right: 0;
+      }
+
+      h4 {
+        &::before {
+          content: '\f00c';
+          display: inline-block;
+          font-family: "Font Awesome\ 5 Free";
+          color: #eeb316;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .browser-offer {
+    padding: 10% 20%;
+
+    @media screen and (min-width: 992px) {
+      padding: 40px 230px 60px;
+    }
+
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      a {
+        // max-width: 130px;
+        text-decoration: none;
+        text-align: center;
+        margin: 60px 45px 0;
+
+        &:nth-child(1) {
+          margin: 60px 45px 45px 0;
+        }
+
+        &:last-child {
+          margin: 60px 0 0 45px;
+        }
+
+        span {
+          display: block;
+          color: #000000;
+
+          &::nth-child(1) {
+            font-family: "Raleway - Regular";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+          }
+          &::nth-child(2) {
+            font-family: "Raleway - Bold";
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
