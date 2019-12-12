@@ -3,17 +3,65 @@
 }
 .browser-notice {
   background-color: #ffffff;
-  width: 80%;
   margin: 0 auto;
   color: #000000;
   font-family: 'Raleway', sans-serif;
-  line-height: 25px;
+  line-height: 1.3;
+  // display: none;
+
+  z-index: 9999;
+  position: fixed;
+  top: 8%;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  max-width: 70%;
+  max-height: 85%;
+  overflow-y: scroll;
+  // opacity: 0;
+
+  .close-notice {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+
+    &::before,
+    &::after {
+      background-color: #414141;
+      content: '';
+      position: absolute;
+      left: 14px;
+      height: 14px;
+      top: 8px;
+      width: 2px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
 
   .container {
-    padding: 10%;
+    padding: 15px 10%;
 
-    @media screen and (min-width: 992px) {
-      padding: 50px 230px;
+    @media screen and (min-width: 992px) and (max-width: 1099px) {
+      padding: 20px 5%;
+    }
+
+    @media screen and (min-width: 1100px) and (max-width: 1499px) {
+      padding: 20px 10%;
+    }
+
+    @media screen and (min-width: 1800px) {
+      padding: 20px 230px;
     }
   }
 
@@ -21,6 +69,7 @@
     font-size: 28px;
     font-weight: 700;
     text-align: center;
+    margin: 10px 0;
   }
 
   .browser-notice__title {
@@ -38,49 +87,50 @@
 
   .browser-notice__img {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: #e9e9e9;
-    padding: 10% 20%;
 
     @media screen and (min-width: 992px) {
-      padding: 23px 230px;
+      flex-wrap: nowrap;
     }
 
     &-item {
-      width: 25%;
-      border-radius: 23px;
-      background-color: #ffffff;
       width: 24%;
       height: auto;
-      margin: 0 10px;
+      margin: 0 10px 10px;
 
       @media screen and (min-width: 992px) {
         width: 24%;
-        max-width: 201px;
+        max-width: 120px;
         height: auto;
+        max-height: 120px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        max-width: 201px;
         max-height: 201px;
       }
     }
   }
 
   .browser-notice__description {
-    padding: 10% 20%;
-
-    @media screen and (min-width: 992px) {
-      padding: 40px 230px 60px;
-    }
-
     & .wrap {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     &-item {
-      width: 47%;
       line-height: 25px;
-      margin-right: 25px;
+      margin-right: 20px;
+
+      @media screen and (min-width: 992px) {
+        width: 45%;
+      }
 
       &:nth-child(2n) {
-        //margin-right: 0;
+        margin-right: 0;
       }
 
       h4 {
@@ -96,47 +146,55 @@
   }
 
   .browser-offer {
-    padding: 10% 20%;
-
-    @media screen and (min-width: 992px) {
-      padding: 40px 230px 60px;
-    }
 
     .wrap {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      margin: 40px 0;
 
-      a {
-        // max-width: 130px;
-        text-decoration: none;
+      div {
+        background-repeat: no-repeat;
+        background-position: center top;
         text-align: center;
-        margin: 60px 45px 0;
+        margin: 0 auto 10px;
+        width: 140px;
+        height: 140px;
 
-        &:nth-child(1) {
-          margin: 60px 45px 45px 0;
-        }
+        a {
+          display: inline-block;
+          margin-top: 93px;
+          text-decoration: none;
 
-        &:last-child {
-          margin: 60px 0 0 45px;
-        }
-
-        span {
-          display: block;
-          color: #000000;
-
-          &::nth-child(1) {
-            font-family: "Raleway - Regular";
+          & span {
+            display: block;
+            line-height: 1.3;
+            color: #000000;
             font-size: 15px;
-            font-weight: 400;
-            line-height: 20px;
-          }
-          &::nth-child(2) {
-            font-family: "Raleway - Bold";
-            font-weight: 700;
+  
+            &:nth-child(1) {
+              font-weight: 700;
+            }
+            &:nth-child(2) {
+              font-weight: 400;
+            }
           }
         }
       }
     }
   }
+}
+
+.mc-modal-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9995;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background: #000;
+  background-color: #000;
+  opacity: .65;
+  opacity: 0;
 }
