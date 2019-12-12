@@ -1,4 +1,4 @@
-jQuery(document).ready(() => {
+jQuery(document).ready(function(){
 
   function isIE() {
     var ua = window.navigator.userAgent;
@@ -8,20 +8,19 @@ jQuery(document).ready(() => {
     return (msie > 0 || trident > 0);
   }
 
-  if (!isIE()) {
-    alert('Not IE browser');
-  }
-
-  $('.close-notice').click(function(){
-    $('.browser-notice').remove();
-  });
-
   setTimeout(function(){
-    if (!isIE()) {
+    if (isIE()) {
+      $('.browser-notice').show();
+  
+      $('.close-notice').click(function(){
+        $('.browser-notice').remove();
+      });
+  
+    } else {
       alert('Not IE browser');
-    };
+      $('.browser-notice').remove();
+    }
 
-
-  }, 5000)
+  }, 5000);
 
 })
