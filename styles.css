@@ -11,14 +11,21 @@
   line-height: 1.3;
   z-index: 9999;
   position: fixed;
-  top: 8%;
-  bottom: 60px;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  max-width: 70%;
-  max-height: 85%;
   overflow-y: scroll; }
-  /* line 23, styles.scss */
+  @media screen and (min-width: 992px) {
+    /* line 4, styles.scss */
+    .browser-notice {
+      top: 8%;
+      bottom: 60px;
+      left: 0;
+      right: 0;
+      max-width: 70%;
+      max-height: 85%; } }
+  /* line 29, styles.scss */
   .browser-notice .close-notice {
     width: 30px;
     height: 30px;
@@ -27,7 +34,7 @@
     right: 10px;
     top: 10px;
     z-index: 2; }
-    /* line 32, styles.scss */
+    /* line 38, styles.scss */
     .browser-notice .close-notice::before, .browser-notice .close-notice::after {
       background-color: #414141;
       content: '';
@@ -36,100 +43,101 @@
       height: 14px;
       top: 8px;
       width: 2px; }
-    /* line 43, styles.scss */
+    /* line 49, styles.scss */
     .browser-notice .close-notice::before {
       transform: rotate(45deg); }
-    /* line 47, styles.scss */
+    /* line 53, styles.scss */
     .browser-notice .close-notice::after {
       transform: rotate(-45deg); }
-  /* line 52, styles.scss */
+  /* line 58, styles.scss */
   .browser-notice .container {
     padding: 15px 10%; }
     @media screen and (min-width: 992px) and (max-width: 1099px) {
-      /* line 52, styles.scss */
+      /* line 58, styles.scss */
       .browser-notice .container {
         padding: 20px 5%; } }
     @media screen and (min-width: 1100px) and (max-width: 1499px) {
-      /* line 52, styles.scss */
+      /* line 58, styles.scss */
       .browser-notice .container {
         padding: 20px 10%; } }
     @media screen and (min-width: 1800px) {
-      /* line 52, styles.scss */
+      /* line 58, styles.scss */
       .browser-notice .container {
         padding: 20px 230px; } }
-  /* line 68, styles.scss */
+  /* line 74, styles.scss */
   .browser-notice h3 {
     font-size: 28px;
     font-weight: 700;
     text-align: center;
     margin: 10px 0; }
-  /* line 75, styles.scss */
+  /* line 81, styles.scss */
   .browser-notice .browser-notice__title {
     text-align: center; }
-    /* line 78, styles.scss */
+    /* line 84, styles.scss */
     .browser-notice .browser-notice__title h3 {
       font-size: 32px; }
-    /* line 82, styles.scss */
+    /* line 88, styles.scss */
     .browser-notice .browser-notice__title span {
       font-size: 20px;
       font-weight: 400; }
-  /* line 88, styles.scss */
+  /* line 94, styles.scss */
   .browser-notice .browser-notice__img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #e9e9e9; }
     @media screen and (min-width: 992px) {
-      /* line 88, styles.scss */
+      /* line 94, styles.scss */
       .browser-notice .browser-notice__img {
         flex-wrap: nowrap; } }
-    /* line 98, styles.scss */
+    /* line 104, styles.scss */
     .browser-notice .browser-notice__img-item {
       width: 24%;
+      min-width: 125px;
       height: auto;
       margin: 0 10px 10px; }
       @media screen and (min-width: 992px) {
-        /* line 98, styles.scss */
+        /* line 104, styles.scss */
         .browser-notice .browser-notice__img-item {
           width: 24%;
           max-width: 120px;
           height: auto;
           max-height: 120px; } }
       @media screen and (min-width: 1200px) {
-        /* line 98, styles.scss */
+        /* line 104, styles.scss */
         .browser-notice .browser-notice__img-item {
           max-width: 201px;
           max-height: 201px; } }
-  /* line 118, styles.scss */
+  /* line 125, styles.scss */
   .browser-notice .browser-notice__description .wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-  /* line 124, styles.scss */
+  /* line 131, styles.scss */
   .browser-notice .browser-notice__description-item {
     line-height: 25px;
     margin-right: 20px; }
     @media screen and (min-width: 992px) {
-      /* line 124, styles.scss */
+      /* line 131, styles.scss */
       .browser-notice .browser-notice__description-item {
         width: 45%; } }
-    /* line 132, styles.scss */
+    /* line 139, styles.scss */
     .browser-notice .browser-notice__description-item:nth-child(2n) {
       margin-right: 0; }
-    /* line 137, styles.scss */
+    /* line 144, styles.scss */
     .browser-notice .browser-notice__description-item h4::before {
       content: '\f00c';
       display: inline-block;
       font-family: "Font Awesome\ 5 Free";
       color: #eeb316;
       margin-right: 5px; }
-  /* line 150, styles.scss */
+  /* line 157, styles.scss */
   .browser-notice .browser-offer .wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 40px 0; }
-    /* line 156, styles.scss */
+    /* line 163, styles.scss */
     .browser-notice .browser-offer .wrap div {
       background-repeat: no-repeat;
       background-position: center top;
@@ -137,25 +145,25 @@
       margin: 0 auto 10px;
       width: 140px;
       height: 140px; }
-      /* line 164, styles.scss */
+      /* line 171, styles.scss */
       .browser-notice .browser-offer .wrap div a {
         display: inline-block;
         margin-top: 93px;
         text-decoration: none; }
-        /* line 169, styles.scss */
+        /* line 176, styles.scss */
         .browser-notice .browser-offer .wrap div a span {
           display: block;
           line-height: 1.3;
           color: #000000;
           font-size: 15px; }
-          /* line 175, styles.scss */
+          /* line 182, styles.scss */
           .browser-notice .browser-offer .wrap div a span:nth-child(1) {
             font-weight: 700; }
-          /* line 178, styles.scss */
+          /* line 185, styles.scss */
           .browser-notice .browser-offer .wrap div a span:nth-child(2) {
             font-weight: 400; }
 
-/* line 188, styles.scss */
+/* line 195, styles.scss */
 .mc-modal-bg {
   position: fixed;
   left: 0;
