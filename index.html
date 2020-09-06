@@ -1,104 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-</head>
-<body>
-  <div class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="bi-modal" style="display: block">
+        <div class="bi-modal-overlay"></div>
 
-  
-  <div class="browser-notice">
-    <div class="close-notice"></div>
-      <div class="browser-notice__title container">
-        <span>Erster Schritt für eine erfolgreiche Zusammenarbeit mit BITinfo?</span>
-        <h3>Bitte den Browser wechseln!</h3>
-      </div>
+        <div class="bi-modal__inner">
+          <div class="bi-modal__inner__i">
+            <div class="bi-modal-popup ie-popup">
+              <a class="bi-modal-close js-bi-modal-close" href="#">
+                <i class="fa fa-times"></i>
+              </a>
+              <div class="ie-popup__title">
+                <p>Erster Schritt für eine erfolgreiche Zusammenarbeit mit BITinfo?</p>
+                <h2>Bitte den Browser wechseln!</h2>
+              </div>
+              <div class="ie-popup__previews">
+                <div class="ie-popup-wrap">
+                  <div class="ie-popup__previews__i">
+                    <div class="ie-popup__previews__item">
+                      <img alt="image" src="img/ie_popup/img-1.png" />
+                    </div>
+                    <div class="ie-popup__previews__item">
+                      <img alt="image" src="img/ie_popup/img-2.png" />
+                    </div>
+                    <div class="ie-popup__previews__item">
+                      <img alt="image" src="img/ie_popup/img-3.png" />
+                    </div>
+                    <div class="ie-popup__previews__item">
+                      <img alt="image" src="img/ie_popup/img-4.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="browser-notice__img container">
-        <img class="browser-notice__img-item" src="./images/img-1.png" alt="">
-        <img class="browser-notice__img-item" src="./images/img-2.png" alt="">
-        <img class="browser-notice__img-item" src="./images/img-3.png" alt="">
-        <img class="browser-notice__img-item" src="./images/img-4.png" alt="">
-      </div>
+              <div class="ie-popup__advantages">
+                <div class="ie-popup-wrap">
+                  <h3>Der Internet Explorer wird von Microsoft nicht weiter unterstützt.</h3>
+                  <div class="ie-popup__advantages__i">
+                    <div class="ie-popup__advantages__item">
+                      <p class="ie-popup__advantages__item__title">SICHERHEIT</p>
+                      <p class="ie-popup__advantages__item__text">
+                        Neuere Browser schützen Sie vor Viren &amp; Trojanern. Datendiebstähle und Schädigungen durch
+                        Malesoftware sind so weniger wahrscheinlich. Aktuelle Browser schließen erheblich mehr
+                        Sicherheitslücken als der IE.
+                      </p>
+                    </div>
+                    <div class="ie-popup__advantages__item">
+                      <p class="ie-popup__advantages__item__title">KOMPATIBILITÄT</p>
+                      <p class="ie-popup__advantages__item__text">
+                        Die auf modernen Webseiten eingesetzten Funktionalitäten werden durch aktuelle Browser besser
+                        unterstützt. Unsere Webinhalte lassen sich mit dem IE nicht korrekt darstellen.
+                      </p>
+                    </div>
+                    <div class="ie-popup__advantages__item">
+                      <p class="ie-popup__advantages__item__title">GESCHWINDIGKEIT</p>
+                      <p class="ie-popup__advantages__item__text">
+                        Speed Kills! Jede neue Browsergeneration verbessert die Geschwindigkeit, mit der Webseiten
+                        dargestellt werden.
+                      </p>
+                    </div>
+                    <div class="ie-popup__advantages__item">
+                      <p class="ie-popup__advantages__item__title">KOMFORT UND LEISTUNG</p>
+                      <p class="ie-popup__advantages__item__text">
+                        Neue Plugins und Tools zur Erweiterungen und besseren Anpassbarkeit anderer Webbrowser
+                        verbesseren das Surfen im Internet.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="browser-notice__description container">
-        <h3>Der Internet Explorer wird von Microsoft nicht weiter unterstützt.</h3>
-        <div class="wrap">
-          <div class="browser-notice__description-item">
-            <h4>SICHERHEIT</h4>
-            <p>Neuere Browser schützen Sie vor Viren & Trojanern. Datendiebstähle und Schädigungen durch Malesoftware sind so weniger wahrscheinlich. Aktuelle Browser schließen erheblich mehr Sicherheitslücken als der IE.</p>
-          </div>
+              <div class="ie-popup__browsers">
+                <div class="ie-popup-wrap">
+                  <h3>Wie wär's mit einem von denen?</h3>
 
-          <div class="browser-notice__description-item">
-            <h4>KOMPATIBILITÄT</h4>
-            <p>Die auf modernen Webseiten eingesetzten Funktionalitäten werden durch aktuelle Browser besser unterstützt. Unsere Webinhalte lassen sich mit dem IE nicht korrekt darstellen.</p>
-          </div>
-
-          <div class="browser-notice__description-item">
-            <h4>GESCHWINDIGKEIT</h4>
-            <p>Speed Kills! Jede neue Browsergeneration verbessert die Geschwindigkeit, mit der Webseiten dargestellt werden.</p>
-          </div>
-
-          <div class="browser-notice__description-item">
-            <h4>KOMFORT UND LEISTUNG</h4>
-            <p>Neue Plugins und Tools zur Erweiterungen und besseren Anpassbarkeit anderer Webbrowser verbesseren das Surfen im Internet.</p>
+                  <div class="ie-popup__browsers__i">
+                    <div class="ie-popup__browsers__item">
+                      <a href="https://www.mozilla.org/de/firefox/new/" target="_blank">
+                        <div class="ie-popup__browsers__item__img">
+                          <img alt="image" src="img/ie_popup/Firefox.png" />
+                        </div>
+                        <p>
+                          <span>Firefox</span>
+                          Mozilla Foundation
+                        </p>
+                      </a>
+                    </div>
+                    <div class="ie-popup__browsers__item">
+                      <a href="https://www.opera.com/de" target="_blank">
+                        <div class="ie-popup__browsers__item__img">
+                          <img alt="image" src="img/ie_popup/Opera.png" />
+                        </div>
+                        <p>
+                          <span>Opera</span>
+                          Opera Software
+                        </p>
+                      </a>
+                    </div>
+                    <div class="ie-popup__browsers__item">
+                      <a href="https://www.google.com/intl/de_de/chrome/" target="_blank">
+                        <div class="ie-popup__browsers__item__img">
+                          <img alt="image" src="img/ie_popup/Chrome.png" />
+                        </div>
+                        <p>
+                          <span>Chrome</span>
+                          Google
+                        </p>
+                      </a>
+                    </div>
+                    <div class="ie-popup__browsers__item">
+                      <a href="https://support.apple.com/de_DE/downloads/safari" target="_blank">
+                        <div class="ie-popup__browsers__item__img">
+                          <img alt="image" src="img/ie_popup/Safari.png" />
+                        </div>
+                        <p>
+                          <span>Safari</span>
+                          Apple
+                        </p>
+                      </a>
+                    </div>
+                    <div class="ie-popup__browsers__item">
+                      <a
+                        href="https://support.microsoft.com/de-de/help/4027741/windows-get-microsoft-edge"
+                        target="_blank"
+                      >
+                        <div class="ie-popup__browsers__item__img">
+                          <img alt="image" src="img/ie_popup/Edge.png" />
+                        </div>
+                        <p>
+                          <span>Edge</span>
+                          Microsoft
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="browser-offer container">
-        <h3>Wie wär's mit einem von denen?</h3>
-        <div class="wrap">
-
-          <div style="background-image: url('./images/Firefox.png');">
-            <a href="https://www.mozilla.org/de/firefox/new/" target="_blank">
-              <span>Firefox</span>
-              <span>Mozilla Foundation</span>
-            </a>
-          </div>
-
-          <div style="background-image: url('./images/Opera.png');">
-            <a href="https://www.opera.com/de" target="_blank">
-              <span>Opera</span>
-              <span>Opera Software</span>
-            </a>
-          </div>
-
-          <div style="background-image: url('./images/Chrome.png');">
-            <a href="https://www.google.com/intl/de_de/chrome/" target="_blank">
-              <span>Chrome</span>
-              <span>Google</span>
-            </a>
-          </div>
-
-          <div style="background-image: url('./images/Safari.png');">
-            <a href="https://support.apple.com/de_DE/downloads/safari" target="_blank">
-              <span>Safari</span>
-              <span>Apple</span>
-            </a>
-          </div>
-
-          <div style="background-image: url('./images/Edge.png');">
-            <a href="https://support.microsoft.com/de-de/help/4027741/windows-get-microsoft-edge" target="_blank">
-              <span>Edge</span>
-              <span>Microsoft</span>
-            </a>
-          </div>
-
-
-        </div>
-
-      </div>
-   
-  </div>
-  <div class="mc-modal-bg" data-dojo-attach-point="modalOverlay" style="display: block; opacity: 0.65;"></div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
-<script src="./script.min.js"></script>
-</body>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./script.min.js"></script>
+  </body>
 </html>

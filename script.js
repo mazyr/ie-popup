@@ -1,26 +1,45 @@
-jQuery(document).ready(function(){
+jQuery(document).ready(function () {
+  $(document).on("click", ".js-bi-modal-close", function (e) {
+    e.preventDefault();
+    closeIePopup();
+  });
 
-  function isIE() {
+  $(document).on("click", ".bi-modal__inner", function (e) {
+    var popup = $(".bi-modal-popup");
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+      e.preventDefault();
+      closeIePopup();
+    }
+  });
+
+  function msieversion() {
     var ua = window.navigator.userAgent;
-    var msie = ua.indexOf('MSIE '); // IE 10 or older
-    var trident = ua.indexOf('Trident/'); //IE 11
+    var msie = ua.indexOf("MSIE ");
 
-    return (msie > 0 || trident > 0);
-  }
-
-  setTimeout(function(){
-    if (isIE()) {
-      $('.browser-notice').show();
-  
-      $('.close-notice').click(function(){
-        $('.browser-notice').remove();
-      });
-  
-    } else {
-      alert('Not IE browser');
-      $('.browser-notice').remove();
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+      loadIePopup();
     }
 
-  }, 5000);
+    return false;
+  }
 
-})
+  function loadIePopup() {
+    $.ajax({
+      url: "ie-popup.html",
+      success: function (data) {
+        $("body").append(data);
+        setTimeout(function () {
+          openIePopup();
+        }, 1500);
+      },
+      dataType: "html",
+    });
+  }
+
+  function openIePopup() {
+    $(".bi-modal").fadeIn(200);
+  }
+  function closeIePopup() {
+    $(".bi-modal").fadeOut(200);
+  }
+});
